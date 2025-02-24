@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4 Login</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .spacer {
+            margin: 20px 0;
+            border-bottom: 1px solid white;
+        }
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%;
+            border: none;
+            border-radius: 5px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Fall 2024 Project 4 Enterprise System</h1>
+    <h2>A Servlet/JSP-based Multi-tiered Enterprise Application using a Tomcat container</h2>
+    <h3>- User Authentication Page -</h3>
+    <div class="spacer"></div>
+
+    <!-- Login Form -->
+    <form action="login" method="POST">
+        <label for="input1">Username:</label><br>
+        <input type="text" id="input1" name="input1" placeholder="Username"><br>
+
+        <label for="input2">Password:</label><br>
+        <input type="password" id="input2" name="input2" placeholder="Password"><br>
+
+        <button type="submit" class="button">Click to Authenticate</button>
+    </form>
+
+    <div class="spacer"></div>
+</body>
+</html>
